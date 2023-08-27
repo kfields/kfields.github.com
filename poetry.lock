@@ -1300,34 +1300,32 @@ version = "0.1.0"
 description = ""
 optional = false
 python-versions = ">=3.10,<3.11"
-files = []
-develop = true
+files = [
+    {file = "stattik-0.1.0-py3-none-any.whl", hash = "sha256:fad8d38e5e0913b1b6eb0beadbe4b5b3e3394065012a469eda95e3493e94df81"},
+    {file = "stattik-0.1.0.tar.gz", hash = "sha256:fec3c6debafb73eb40ff03bafecddb4c938b76f110f39ab1cc00c1f3f541897a"},
+]
 
 [package.dependencies]
-aiofiles = "^23.2.1"
-aioreactive = "^0.16.0"
-aiosqlite = "^0.19.0"
-ariadne = "^0.20.1"
-beautifulsoup4 = "^4.12.2"
-click = "^8.1.7"
-emoji = "^2.8.0"
-html5lib = "^1.1"
-loguru = "^0.7.0"
-lxml = "^4.9.3"
-markblocks = "^0.1.0"
-pydantic = "^1.10.9"
-Pygments = "^2.16.1"
-python-dotenv = "^1.0.0"
-python-frontmatter = "^1.0.0"
-PyYAML = "^6.0.1"
-requests = "^2.31.0"
-SQLAlchemy = "^2.0.20"
-uvicorn = {version = "^0.23.2", extras = ["standard"]}
-xmlschema = "^2.4.0"
-
-[package.source]
-type = "directory"
-url = "../stattik/packages/stattik"
+aiofiles = ">=23.2.1,<24.0.0"
+aioreactive = ">=0.16.0,<0.17.0"
+aiosqlite = ">=0.19.0,<0.20.0"
+ariadne = ">=0.20.1,<0.21.0"
+beautifulsoup4 = ">=4.12.2,<5.0.0"
+click = ">=8.1.7,<9.0.0"
+emoji = ">=2.8.0,<3.0.0"
+html5lib = ">=1.1,<2.0"
+loguru = ">=0.7.0,<0.8.0"
+lxml = ">=4.9.3,<5.0.0"
+markblocks = ">=0.1.0,<0.2.0"
+pydantic = ">=1.10.9,<2.0.0"
+Pygments = ">=2.16.1,<3.0.0"
+python-dotenv = ">=1.0.0,<2.0.0"
+python-frontmatter = ">=1.0.0,<2.0.0"
+PyYAML = ">=6.0.1,<7.0.0"
+requests = ">=2.31.0,<3.0.0"
+SQLAlchemy = ">=2.0.20,<3.0.0"
+uvicorn = {version = ">=0.23.2,<0.24.0", extras = ["standard"]}
+xmlschema = ">=2.4.0,<3.0.0"
 
 [[package]]
 name = "stattik-app-search-fuse-bulma"
@@ -1335,12 +1333,10 @@ version = "0.1.0"
 description = ""
 optional = false
 python-versions = ">=3.10,<3.11"
-files = []
-develop = true
-
-[package.source]
-type = "directory"
-url = "../stattik/packages/app-search-fuse-bulma"
+files = [
+    {file = "stattik_app_search_fuse_bulma-0.1.0-py3-none-any.whl", hash = "sha256:0942550e74884e4768aa519d5018cd31aa0fb5f1704f1c8fc2ccb794a88e5ea0"},
+    {file = "stattik_app_search_fuse_bulma-0.1.0.tar.gz", hash = "sha256:f0f4c15ef7780c626da8ec55693b3be948b48e8a77dbd62b5d484015cdf47384"},
+]
 
 [[package]]
 name = "stattik-plugin-search-fuse"
@@ -1348,12 +1344,10 @@ version = "0.1.0"
 description = ""
 optional = false
 python-versions = ">=3.10,<3.11"
-files = []
-develop = true
-
-[package.source]
-type = "directory"
-url = "../stattik/packages/plugin-search-fuse"
+files = [
+    {file = "stattik_plugin_search_fuse-0.1.0-py3-none-any.whl", hash = "sha256:b91dd51f442582c7e9265f91c7ad3551c4b7261dcee48de52d9a0013231a237f"},
+    {file = "stattik_plugin_search_fuse-0.1.0.tar.gz", hash = "sha256:98f84ce192bd63454cbd3e43d5ad97f1030d617516e6ed23bbd441c0d851ab45"},
+]
 
 [[package]]
 name = "stattik-theme-bulma"
@@ -1361,12 +1355,10 @@ version = "0.1.0"
 description = ""
 optional = false
 python-versions = ">=3.10,<3.11"
-files = []
-develop = true
-
-[package.source]
-type = "directory"
-url = "../stattik/packages/theme-bulma"
+files = [
+    {file = "stattik_theme_bulma-0.1.0-py3-none-any.whl", hash = "sha256:23212e65c619c3c3bcac84d6f8f3fccd71590fadb23b69efe220dac5450fe3b5"},
+    {file = "stattik_theme_bulma-0.1.0.tar.gz", hash = "sha256:115042c7b68d1670021a4fcf1df98eff61a0217ab793c871605f3b5f96a50629"},
+]
 
 [[package]]
 name = "typing-extensions"
@@ -1711,4 +1703,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.11"
-content-hash = "a2c1003b03c48c1cf14e85b3c1f10bd369ecd23ce9af30428021efccbd5ab780"
+content-hash = "29775326be956fb7cce3d74ca725c1c4db93815480f0128a394e1b41811bd427"

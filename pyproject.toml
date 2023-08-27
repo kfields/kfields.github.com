@@ -16,10 +16,10 @@ stattik-plugin-search-fuse = "^0.1.0"
 stattik-app-search-fuse-bulma = "^0.1.0"
 
 [tool.poetry.dev-dependencies]
-stattik = {path = "../stattik/packages/stattik",  develop = true}
-stattik-theme-bulma = {path = "../stattik/packages/theme-bulma", develop = true}
-stattik-plugin-search-fuse = {path = "../stattik/packages/plugin-search-fuse", develop = true}
-stattik-app-search-fuse-bulma = {path = "../stattik/packages/app-search-fuse-bulma", develop = true}
+#stattik = {path = "../stattik/packages/stattik",  develop = true}
+#stattik-theme-bulma = {path = "../stattik/packages/theme-bulma", develop = true}
+#stattik-plugin-search-fuse = {path = "../stattik/packages/plugin-search-fuse", develop = true}
+#stattik-app-search-fuse-bulma = {path = "../stattik/packages/app-search-fuse-bulma", develop = true}
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
