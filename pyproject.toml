@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "kfields-site"
+version = "0.1.0"
+description = ""
+authors = ["Kurtis Fields <kurtisfields@gmail.com>"]
+packages = [
+    { include = "kfields_site" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+gql = {extras = ["all"], version = "^3.4.1"}
+stattik = "^0.1.0"
+stattik-theme-bulma = "^0.1.0"
+stattik-plugin-search-fuse = "^0.1.0"
+stattik-app-search-fuse-bulma = "^0.1.0"
+
+[tool.poetry.dev-dependencies]
+stattik = {path = "../stattik/packages/stattik",  develop = true}
+stattik-theme-bulma = {path = "../stattik/packages/theme-bulma", develop = true}
+stattik-plugin-search-fuse = {path = "../stattik/packages/plugin-search-fuse", develop = true}
+stattik-app-search-fuse-bulma = {path = "../stattik/packages/app-search-fuse-bulma", develop = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
