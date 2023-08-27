@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+    <html  lang="en">
+        
+  
+    <head >
+        
+    
+    <meta  charset="utf-8" />
+    <meta  http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta  name="viewport" content="width=device-width, initial-scale=1" />
+    <title >
+        Install Pyenv on Ubuntu 22.04
+    </title>
+    <script  src="/js/bundle.js">
+    </script>
+    <link  rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
+    <link  rel="stylesheet" href="/css/bundle.css" />
+    <link  rel="stylesheet" href="/css/components.css" />
+    </head>
+    <body >
+        
+    
+    
+    <div  class="layout">
+        
+  
+    
+    <header >
+        
+    
+    
+    <div  class="container">
+        
+  
+    
+    
+    <nav  class="main-nav navbar is-primary" role="navigation" aria-label="main navigation">
+        
+  
+    <div  class="navbar-brand">
+        
+    
+    <a  class="navbar-item" href="/">
+        
+      
+    <span  style="font-size: 2em">
+    
+    <div >
+        
+    kfields ⚡
+  
+    </div>
+    
+    </span>
+    </a>
+    <a  role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        
+      
+    <span  aria-hidden="true">
+    </span>
+    <span  aria-hidden="true">
+    </span>
+    <span  aria-hidden="true">
+    </span>
+    </a>
+    </div>
+    <div  id="navbarBasicExample" class="navbar-menu">
+        
+    
+    <div  class="navbar-start">
+        
+
+      
+    <a  href="/blog" class="navbar-item">
+        
+        Blog
+      
+    </a>
+    <a  href="/projects" class="navbar-item">
+        
+        Projects
+      
+    </a>
+    <div  class="navbar-item has-dropdown is-hoverable">
+        
+        
+    <a  class="navbar-link">
+        
+          More
+        
+    </a>
+    <div  class="navbar-dropdown">
+        
+          
+    <a  href="/about" class="navbar-item">
+        
+            About
+          
+    </a>
+    <a  href="/contact" class="navbar-item">
+        
+            Contact
+          
+    </a>
+    </div>
+    </div>
+    </div>
+    <div  class="navbar-end">
+        
+      
+    <a  href="/search" class="navbar-item">
+        
+        
+    <span  class="icon is-medium">
+        
+          
+    <i  class="fas fa-search fa-2x">
+    </i>
+    </span>
+    </a>
+    <a  href="https://github.com/kfields" class="navbar-item">
+        
+        
+    <span  class="icon is-medium">
+        
+          
+    <i  class="fab fa-github fa-2x">
+    </i>
+    </span>
+    </a>
+    </div>
+    </div>
+    </nav>
+    
+    
+    </div>
+    
+    </header>
+    
+    <main  class="mx-2">
+        
+    
+    
+    <div  class="container">
+        
+  
+    
+    
+    
+    <div  class="container">
+        
+  
+    
+    <div  class="columns">
+        
+      
+    <div  class="column is-one-fifth">
+        
+        
+    <div  class="landing-heading">
+        
+          
+    <div  class="landing-title">
+        Posts
+    </div>
+    </div>
+    </div>
+    <div  class="column">
+        
+        
+    
+    <article >
+        
+    
+    <section >
+        
+      
+    <h1 >
+        Install Pyenv on Ubuntu 22.04
+    </h1>
+    <div  class="content">
+        <h2>
+  Get the Required Dependencies
+</h2>
+<div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>update<span class="p">;</span><span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>make<span class="w"> </span>build-essential<span class="w"> </span>libssl-dev<span class="w"> </span>zlib1g-dev<span class="w"> </span><span class="se">\</span>
+libbz2-dev<span class="w"> </span>libreadline-dev<span class="w"> </span>libsqlite3-dev<span class="w"> </span>wget<span class="w"> </span>curl<span class="w"> </span>llvm<span class="w"> </span><span class="se">\</span>
+libncursesw5-dev<span class="w"> </span>xz-utils<span class="w"> </span>tk-dev<span class="w"> </span>libxml2-dev<span class="w"> </span>libxmlsec1-dev<span class="w"> </span>libffi-dev<span class="w"> </span>liblzma-dev
+</pre></div>
+
+<h2>
+  Install Pyenv
+</h2>
+<p>
+  <a href="https://github.com/pyenv/pyenv-installer">
+  https://github.com/pyenv/pyenv-installer
+  </a>
+</p>
+<div class="highlight"><pre><span></span>curl<span class="w"> </span>https://pyenv.run<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
+</pre></div>
+
+<p>
+  Make sure this is in your 
+  <code>
+  .bashrc
+  </code>
+</p>
+<div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/.pyenv/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
+<span class="nb">eval</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>pyenv<span class="w"> </span>init<span class="w"> </span>--path<span class="k">)</span><span class="s2">&quot;</span>
+<span class="nb">eval</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>pyenv<span class="w"> </span>virtualenv-init<span class="w"> </span>-<span class="k">)</span><span class="s2">&quot;</span>
+</pre></div>
+
+<div class="highlight"><pre><span></span>pyenv<span class="w"> </span>install<span class="w"> </span><span class="m">3</span>.10.6
+</pre></div>
+
+
+    </div>
+    </section>
+    </article>
+    
+    </div>
+    <div  class="column is-one-fifth">
+        
+      
+    </div>
+    </div>
+    
+    </div>
+    
+    
+    
+    </div>
+    
+    </main>
+    </div>
+    
+    </body>
+    </html>
+    
