@@ -267,13 +267,13 @@ lxml = ["lxml"]
 
 [[package]]
 name = "botocore"
-version = "1.31.34"
+version = "1.31.35"
 description = "Low-level, data-driven core of boto 3."
 optional = false
 python-versions = ">= 3.7"
 files = [
-    {file = "botocore-1.31.34-py3-none-any.whl", hash = "sha256:23ba9e3a8b4c0e5966bbe2db62edb27f61e16b846f153f22aefda7b3c05c7942"},
-    {file = "botocore-1.31.34.tar.gz", hash = "sha256:456ef8eb458db35b8643eb10e652ed50750d13e5af431593471b2c705c34b5db"},
+    {file = "botocore-1.31.35-py3-none-any.whl", hash = "sha256:943e1465aad66db4933b06809134bd08c5b05e8eb18c19742ffec82f54769457"},
+    {file = "botocore-1.31.35.tar.gz", hash = "sha256:7e4534325262f43293a9cc9937cb3f1711365244ffde8b925a6ee862bcf30a83"},
 ]
 
 [package.dependencies]
@@ -1279,13 +1279,13 @@ sqlcipher = ["sqlcipher3-binary"]
 
 [[package]]
 name = "starlette"
-version = "0.31.0"
+version = "0.31.1"
 description = "The little ASGI library that shines."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "starlette-0.31.0-py3-none-any.whl", hash = "sha256:1aab7e04bcbafbb1867c1ce62f6b21c60a6e3cecb5a08dcee8abac7457fbcfbf"},
-    {file = "starlette-0.31.0.tar.gz", hash = "sha256:7df0a3d8fa2c027d641506204ef69239d19bf9406ad2e77b319926e476ac3042"},
+    {file = "starlette-0.31.1-py3-none-any.whl", hash = "sha256:009fb98ecd551a55017d204f033c58b13abcd4719cb5c41503abbf6d260fde11"},
+    {file = "starlette-0.31.1.tar.gz", hash = "sha256:a4dc2a3448fb059000868d7eb774dd71229261b6d49b6851e7849bec69c0a011"},
 ]
 
 [package.dependencies]
@@ -1334,7 +1334,7 @@ name = "stattik-app-search-fuse-bulma"
 version = "0.1.0"
 description = ""
 optional = false
-python-versions = "^3.10"
+python-versions = ">=3.10,<3.11"
 files = []
 develop = true
 
@@ -1347,7 +1347,7 @@ name = "stattik-plugin-search-fuse"
 version = "0.1.0"
 description = ""
 optional = false
-python-versions = ">=3.10.0,<3.11"
+python-versions = ">=3.10,<3.11"
 files = []
 develop = true
 
@@ -1360,7 +1360,7 @@ name = "stattik-theme-bulma"
 version = "0.1.0"
 description = ""
 optional = false
-python-versions = "^3.10"
+python-versions = ">=3.10,<3.11"
 files = []
 develop = true
 
@@ -1710,5 +1710,5 @@ multidict = ">=4.0"
 
 [metadata]
 lock-version = "2.0"
-python-versions = ">=3.10.0,<3.11"
-content-hash = "07571d3c5f54800912a96fafa760446c2ac20f17e6a7301badce70a44f736609"
+python-versions = ">=3.10,<3.11"
+content-hash = "a2c1003b03c48c1cf14e85b3c1f10bd369ecd23ce9af30428021efccbd5ab780"
