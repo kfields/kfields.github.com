@@ -13,7 +13,7 @@ import aiohttp
 
 from stattik.architect.builders import FolderBuilder, MarkdownBuilder, Job
 
-GH_TOKEN = os.getenv('GH_TOKEN')
+GH_API_TOKEN = os.getenv('GH_API_TOKEN')
 
 class ProjectsBuilder(FolderBuilder):
     extension = 'Projects'
@@ -27,7 +27,7 @@ class ProjectsBuilder(FolderBuilder):
 
         transport = AIOHTTPTransport(
             url="https://api.github.com/graphql",
-            headers={'Authorization': f"token {GH_TOKEN}"}
+            headers={'Authorization': f"token {GH_API_TOKEN}"}
         )
 
         async with Client(
