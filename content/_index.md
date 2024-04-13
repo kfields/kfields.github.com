@@ -1,7 +1,6 @@
 ---
 title: Kurtis Fields
 description: Full Stack Web Developer
-data: !data home.yml
 ---
 ### Hi there 👋
 
